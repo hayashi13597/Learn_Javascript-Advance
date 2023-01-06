@@ -27,8 +27,8 @@ const res2 = {
 // res2.numGuests ||= 10;
 
 //Nullish Assignment Operators
-res1.numGuests ??= 10; //this result is false if res1.numGuests = 0 because 0 is falsy value
-res2.numGuests ??= 10;
+// res1.numGuests ??= 10; //this result is false if res1.numGuests = 0 because 0 is falsy value
+// res2.numGuests ??= 10;
 
 //Anonymous owner
 // res1.owner = res1.owner && "<ANONYMOUS>"; //res1.owner is undefined because res1.owner is not exist

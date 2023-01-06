@@ -5,7 +5,7 @@ const restaurant = {
   name: "hello world",
   value: "Xin chao",
 };
-// console.log(restaurant ?? 10); // ?? is a Nullish coalescing operator
+console.log(restaurant ?? 10); // ?? is a Nullish coalescing operator
 
 //Logical Assignment operators
 const res1 = {
@@ -30,13 +30,5 @@ const res2 = {
 res1.numGuests ??= 10; //this result is false if res1.numGuests = 0 because 0 is falsy value
 res2.numGuests ??= 10;
 
-//Anonymous owner
-// res1.owner = res1.owner && "<ANONYMOUS>"; //res1.owner is undefined because res1.owner is not exist
-// res2.owner = res2.owner && "<ANONYMOUS>";
-
-//AND Assignment Operation
-res1.owner &&= "<ANONYMOUS>";
-res2.owner &&= "<ANONYMOUS>";
-
-console.log(res1);
-console.log(res2);
+console.log(res1.numGuests);
+console.log(res2.numGuests);

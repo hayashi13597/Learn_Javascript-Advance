@@ -35,8 +35,8 @@ res2.numGuests ??= 10;
 // res2.owner = res2.owner && "<ANONYMOUS>";
 
 //AND Assignment Operation
-res1.owner &&= "<ANONYMOUS>";
-res2.owner &&= "<ANONYMOUS>";
+res1 &&= "<ANONYMOUS>";
+res2 &&= "<ANONYMOUS>";
 
 console.log(res1);
 console.log(res2);
