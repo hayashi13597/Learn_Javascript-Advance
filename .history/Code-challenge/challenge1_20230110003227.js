@@ -66,7 +66,7 @@ const {
 // console.log(team1, draw, team2);
 
 /*
-6. Viết 1 hàm ('printGoals') nhận vào 1 số tên cầu thủ đã ghi bàn (sử dụng toán tử spread) và in ra console tổng số bàn thắng mà những cầu thủ đó đã ghi bàn
+6. Viết 1 hàm ('printGoals') nhận vào 1 số tên cầu thủ đã ghi bàn (sử dụng toán tử spread) và in ra console tên những cầu thủ đó cùng với số cầu thủ đã ghi bàn
 */
 const printGoals = function (...namePlayers) {
   console.log(`The match have ${namePlayers.length} goals were scored`);
