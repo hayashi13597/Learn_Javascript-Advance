@@ -52,8 +52,8 @@ console.log(gk, fieldPlayers);
 // 3. Tạo 1 mảng 'allPlayers' bao gồm toàn bộ 22 cầu thủ trên sân
 const allPlayers = [...players1, ...players2];
 console.log(allPlayers);
-
 /*
+
 4. Trong trận đấu, Bayern Munich (team 1) sử dụng 3 quyền thay người. Hãy tạo 1 mảng mới ('players1Final') gôm các cầu thủ ban đầu của Bayern rồi thêm vào 'Thiago', 'Coutinho' và 'Perisic'
 */
 const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
