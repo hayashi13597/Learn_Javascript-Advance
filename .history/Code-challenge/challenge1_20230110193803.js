@@ -115,8 +115,6 @@ Ví dụ:
 
 const scorers = {};
 for (const player of game.scored) {
-  //Nếu trong Object scorers tồn tại key(player) thì tăng value(số bàn ghi) lên 1
-  //Ngược lại Object scorers sẽ tạo 1 key(player) mới với value được gán bằng 1.
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 console.log(scorers);

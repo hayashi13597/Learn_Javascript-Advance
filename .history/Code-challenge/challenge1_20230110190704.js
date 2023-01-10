@@ -79,8 +79,8 @@ team1 > team2 && console.log("Team 2 win");
 
 //Code challenge #2
 //1. Lặp mảng game.scored array và in ra cầu thủ cùng với số bàn thắng đã ghi (Ví dụ: "Goal 1: Lewandowski")
-for (const [index, player] of game.scored.entries()) {
-  console.log(`Goal ${index + 1}: ${player}`);
+for (const [i, el] of game.scored.entries()) {
+  console.log(`Goal ${i + 1}: ${el}`);
 }
 
 //2. Sử dụng vòng lặp để tính tỉ lệ kết quả trận đấu và in ra console (Chúng ta đã học cách tính trung bình tổng ở phần trước, các bạn có thể xem lại nếu không nhớ)
@@ -103,20 +103,4 @@ for (const [team, value] of Object.entries(game.odds)) {
   console.log(`Tỷ lệ ${teamName} ${value}`);
 }
 
-/*
-BONUS: Tạo ra 1 đối tướng là 'scorers', đối tượng này gồm các thuộc tính với key (tên thuộc tính) là tên cầu thủ đã ghi bàn, value (giá trị) là số bàn thắng đã ghi.
-Ví dụ:
-{
-  Gnarby:1,
-  Hummels:1,
-  Lewandowski: 2
-}
-*/
-
-const scorers = {};
-for (const player of game.scored) {
-  //Nếu trong Object scorers tồn tại key(player) thì tăng value(số bàn ghi) lên 1
-  //Ngược lại Object scorers sẽ tạo 1 key(player) mới với value được gán bằng 1.
-  scorers[player] ? scorers[player]++ : (scorers[player] = 1);
-}
-console.log(scorers);
+console.log(Object.values(game.scored));

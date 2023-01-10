@@ -106,17 +106,15 @@ for (const [team, value] of Object.entries(game.odds)) {
 /*
 BONUS: Tạo ra 1 đối tướng là 'scorers', đối tượng này gồm các thuộc tính với key (tên thuộc tính) là tên cầu thủ đã ghi bàn, value (giá trị) là số bàn thắng đã ghi.
 Ví dụ:
-{
-  Gnarby:1,
-  Hummels:1,
-  Lewandowski: 2
-}
-*/
+ {
+Gnarby:1,
+Hummels:1,
+Lewandowski: 2
+ }
 
 const scorers = {};
 for (const player of game.scored) {
-  //Nếu trong Object scorers tồn tại key(player) thì tăng value(số bàn ghi) lên 1
-  //Ngược lại Object scorers sẽ tạo 1 key(player) mới với value được gán bằng 1.
+  //   console.log(player);
   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 console.log(scorers);
